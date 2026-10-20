@@ -1,0 +1,393 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ประเทศไทยพร้อมรับมือกับ AI หรือยัง?</title>
+<meta name="description" content="การศึกษากฎหมายไทยในการกำกับดูแลปัญญาประดิษฐ์และคุ้มครองสิทธิของประชาชน">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2317100c'/%3E%3Cpath d='M16 5v20M8 25h16M6 11h20M6 11l-3 8h6zM26 11l-3 8h6z' stroke='%23c9a56b' stroke-width='1.8' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#hero" aria-label="กลับไปหน้าแรก">
+    <svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><path d="M16 5v20M8 25h16M6 11h20M6 11l-3 8h6zM26 11l-3 8h6z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
+    <span>AI &amp; กฎหมายไทย</span>
+  </a>
+  <nav class="nav" id="nav" aria-label="สารบัญ">
+    <a href="#background">ที่มา</a>
+    <a href="#situation">สถานการณ์</a>
+    <a href="#laws">กฎหมาย</a>
+    <a href="#pdpa">PDPA</a>
+    <a href="#cyber">คอมพิวเตอร์/ลิขสิทธิ์</a>
+    <a href="#voice">กรณีเสียงปลอม</a>
+    <a href="#parties">ความรับผิด</a>
+    <a href="#draft">ร่างกฎหมาย</a>
+    <a href="#eu">EU</a>
+    <a href="#conclusion">สรุป</a>
+    <a href="#refs">อ้างอิง</a>
+  </nav>
+  <button class="btn btn-gold" id="presentBtn" type="button">▶ โหมดพรีเซนต์</button>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+</header>
+
+<main id="main">
+
+<!-- 1. HERO -->
+<section class="slide hero" id="hero" data-title="หน้าแรก">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow reveal">AI · กฎหมายไทย · สิทธิของประชาชน</p>
+    <h1 class="reveal">ประเทศไทยพร้อมรับมือกับ <span class="gold">AI</span> หรือยัง<span class="gold">?</span></h1>
+    <p class="lead reveal">จากการศึกษากฎหมายไทยในการกำกับดูแลปัญญาประดิษฐ์และคุ้มครองสิทธิของประชาชน</p>
+    <p class="tagline reveal">กฎหมายที่มีอยู่รองรับได้แค่ไหน — และเมื่อ AI ก่อความเสียหาย ใครต้องรับผิด?</p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-gold" href="#background">เริ่มอ่าน ↓</a>
+      <button class="btn btn-ghost" type="button" data-start-present>▶ เปิดโหมดพรีเซนต์</button>
+    </div>
+  </div>
+  <img class="gavel" src="img/gavel.png" alt="" width="360" height="360" aria-hidden="true">
+</section>
+
+<!-- 2. BACKGROUND -->
+<section class="slide" id="background" data-title="ที่มาและความสำคัญ">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2>ที่มาและความสำคัญ</h2></header>
+    <p class="lead reveal">ปัญญาประดิษฐ์ (Artificial Intelligence: AI) ถูกนำมาใช้มากขึ้นในภาคธุรกิจ การศึกษา และหน่วยงานภาครัฐ ขณะเดียวกัน การใช้ AI อาจก่อให้เกิดความเสี่ยง</p>
+    <div class="grid g3">
+      <article class="card risk reveal"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><h3>การละเมิดข้อมูลส่วนบุคคล</h3></article>
+      <article class="card risk reveal"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M6 20h12M4 8h16M4 8l-2 6h4zM20 8l-2 6h4z"/></svg></span><h3>การเลือกปฏิบัติ</h3></article>
+      <article class="card risk reveal"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M12 8v3M12 13.5v.5"/></svg></span><h3>การสร้างข้อมูลปลอม</h3></article>
+    </div>
+    <h3 class="sub reveal">ประเด็นปัญหาทางกฎหมาย</h3>
+    <ol class="questions">
+      <li class="reveal"><b>1</b><span>กฎหมายไทยที่มีอยู่สามารถรองรับความเสี่ยงจาก AI ได้มากน้อยเพียงใด</span></li>
+      <li class="reveal"><b>2</b><span>เมื่อเกิดความเสียหายจาก AI ใครอาจต้องรับผิดตามกฎหมาย</span></li>
+      <li class="reveal"><b>3</b><span>ประเทศไทยควรพัฒนากลไกกำกับดูแล AI อย่างไรให้เหมาะสมกับความเสี่ยง</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 3. SITUATION -->
+<section class="slide alt" id="situation" data-title="สถานการณ์ AI ในประเทศไทย ปี 2569">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2>สถานการณ์ AI ในประเทศไทย ปี 2569</h2></header>
+    <p class="lead reveal">ผลสำรวจความพร้อม AI ระดับองค์กรของประเทศไทย โดย NECTEC เผยแพร่เมื่อวันที่ 3 กันยายน 2569 · <a href="https://www.nectec.or.th/news/news-pr-news/ai-readiness-2026.html" target="_blank" rel="noopener">ดูแหล่งที่มา</a></p>
+    <div class="grid g4 stats">
+      <article class="card stat reveal">
+        <div class="big"><span class="count" data-to="53.7" data-dec="1">53.7</span><small>%</small></div>
+        <p>ขององค์กรที่สำรวจเริ่มใช้ AI แล้ว</p>
+        <div class="bar"><i style="--w:53.7%"></i></div>
+        <p class="src">ที่มา: NECTEC ผลสำรวจความพร้อม AI ระดับองค์กร (3 ก.ย. 2569)</p>
+      </article>
+      <article class="card stat reveal">
+        <div class="big"><span class="count" data-to="40.0" data-dec="1">40.0</span></div>
+        <p>คือคะแนนความพร้อมเฉลี่ยขององค์กร 308 แห่งที่เริ่มใช้ AI</p>
+        <p class="src">ที่มา: NECTEC ผลสำรวจความพร้อม AI ระดับองค์กร (3 ก.ย. 2569)</p>
+      </article>
+      <article class="card stat reveal">
+        <div class="big"><span class="count" data-to="28.9" data-dec="1">28.9</span></div>
+        <p>คือคะแนนความพร้อมด้านธรรมาภิบาล AI ซึ่งต่ำที่สุดใน 5 มิติที่สำรวจ</p>
+        <p class="src">ที่มา: NECTEC ผลสำรวจความพร้อม AI ระดับองค์กร (3 ก.ย. 2569)</p>
+      </article>
+      <article class="card stat reveal">
+        <div class="big"><span class="count" data-to="46.2" data-dec="1">46.2</span><small>%</small></div>
+        <p>ขององค์กรยังไม่มีการประเมินความเสี่ยงหรือการกำกับดูแลการใช้ AI</p>
+        <div class="bar warn"><i style="--w:46.2%"></i></div>
+        <p class="src">ที่มา: NECTEC ผลสำรวจความพร้อม AI ระดับองค์กร (3 ก.ย. 2569)</p>
+      </article>
+    </div>
+    <p class="note reveal">จากการสำรวจครอบคลุมองค์กรภาครัฐและเอกชน <b>574 แห่ง</b> ใน <b>10 กลุ่มอุตสาหกรรม</b></p>
+    <h3 class="sub reveal">การวิเคราะห์ของกลุ่มเรา</h3>
+    <div class="grid g4">
+      <div class="chip reveal"><b>1</b>ความครอบคลุมของกฎหมาย</div>
+      <div class="chip reveal"><b>2</b>การกำหนดหน้าที่และความรับผิด</div>
+      <div class="chip reveal"><b>3</b>การคุ้มครองและเยียวยาผู้เสียหาย</div>
+      <div class="chip reveal"><b>4</b>การกำกับดูแลและการบังคับใช้กฎหมาย</div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. LAWS -->
+<section class="slide" id="laws" data-title="กฎหมายไทยที่เกี่ยวข้องกับ AI">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2>กฎหมายไทยที่เกี่ยวข้องกับ AI และสถานะปัจจุบัน</h2></header>
+    <h3 class="sub reveal"><span class="badge in-force">ใช้บังคับแล้ว</span>กฎหมายที่มีผลใช้บังคับแล้ว</h3>
+    <div class="grid g4">
+      <article class="card law reveal"><h4>PDPA</h4><p class="cite">พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562</p><p>กำกับการเก็บรวบรวม ใช้ และเปิดเผยข้อมูลส่วนบุคคล</p></article>
+      <article class="card law reveal"><h4>พ.ร.บ.คอมพิวเตอร์ฯ</h4><p class="cite">พ.ร.บ.ว่าด้วยการกระทำความผิดเกี่ยวกับคอมพิวเตอร์ พ.ศ. 2550 และฉบับแก้ไขเพิ่มเติม</p><p>ใช้กับความผิดเกี่ยวกับข้อมูลและระบบคอมพิวเตอร์ตามองค์ประกอบของกฎหมาย</p></article>
+      <article class="card law reveal"><h4>กฎหมายลิขสิทธิ์</h4><p class="cite">พ.ร.บ.ลิขสิทธิ์ พ.ศ. 2537 และที่แก้ไขเพิ่มเติม</p><p>คุ้มครองงานสร้างสรรค์และสิทธิของเจ้าของลิขสิทธิ์ตามกฎหมาย</p></article>
+      <article class="card law reveal"><h4>ประมวลกฎหมาย</h4><p class="cite">ประมวลกฎหมายอาญา และประมวลกฎหมายแพ่งและพาณิชย์</p><p>ใช้วิเคราะห์ความผิดและความรับผิดจากการกระทำที่ก่อให้เกิดความเสียหายตามเงื่อนไขของแต่ละกฎหมาย</p></article>
+    </div>
+    <h3 class="sub reveal"><span class="badge draft">ร่าง / ระหว่างพัฒนา</span>สถานะการพัฒนากฎหมาย AI ของไทย</h3>
+    <ol class="timeline reveal">
+      <li><time>ปี 2568</time><p>มีการรับฟังความคิดเห็นต่อร่างหลักการกฎหมาย AI</p></li>
+      <li><time>กรกฎาคม 2569</time><p>ETDA เผยแพร่ Draft AI Regulation v.4 และมีการเปิดรับฟังความคิดเห็นต่อร่างกฎหมาย AI ฉบับใหม่</p></li>
+      <li><time>14 สิงหาคม 2569</time><p>สิ้นสุดช่วงรับฟังความคิดเห็นตามข้อมูลที่เผยแพร่</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 5. PDPA -->
+<section class="slide alt" id="pdpa" data-title="PDPA กับการใช้ AI">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2>PDPA กับการใช้ AI และการคุ้มครองข้อมูลส่วนบุคคล</h2></header>
+    <p class="lead reveal">กฎหมายที่เกี่ยวข้อง: พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562</p>
+    <div class="flow">
+      <article class="card step reveal">
+        <span class="tag">ขั้นที่ 1</span><h3>การเก็บรวบรวมข้อมูล</h3>
+        <ul>
+          <li><b>มาตรา 19:</b> หลักเกณฑ์เกี่ยวกับความยินยอม</li>
+          <li><b>มาตรา 23:</b> การแจ้งรายละเอียดการเก็บรวบรวมข้อมูล</li>
+          <li><b>มาตรา 24:</b> กรณีที่เก็บข้อมูลได้โดยไม่ต้องขอความยินยอมตามเงื่อนไขของกฎหมาย</li>
+          <li><b>มาตรา 26:</b> การเก็บรวบรวมข้อมูลส่วนบุคคลที่มีความอ่อนไหว</li>
+        </ul>
+      </article>
+      <article class="card step reveal">
+        <span class="tag">ขั้นที่ 2</span><h3>การใช้และประมวลผลข้อมูล</h3>
+        <ul>
+          <li><b>มาตรา 21 และ 27:</b> การใช้หรือเปิดเผยข้อมูลตามวัตถุประสงค์และเงื่อนไขที่กฎหมายกำหนด</li>
+          <li><b>มาตรา 32:</b> สิทธิในการคัดค้านการเก็บรวบรวม ใช้ หรือเปิดเผยข้อมูลในบางกรณี</li>
+          <li><b>มาตรา 35 และ 36:</b> ความถูกต้องของข้อมูลและสิทธิขอให้แก้ไขข้อมูล</li>
+        </ul>
+      </article>
+      <article class="card step reveal">
+        <span class="tag">ขั้นที่ 3</span><h3>ความปลอดภัยและหน้าที่ของผู้เกี่ยวข้อง</h3>
+        <ul>
+          <li><b>มาตรา 37:</b> หน้าที่ของผู้ควบคุมข้อมูล เช่น มาตรการรักษาความปลอดภัยและการแจ้งเหตุละเมิดข้อมูล</li>
+          <li><b>มาตรา 40:</b> หน้าที่ของผู้ประมวลผลข้อมูลส่วนบุคคล</li>
+        </ul>
+      </article>
+    </div>
+    <div class="grid g2">
+      <article class="callout scenario reveal"><span class="tag">ตัวอย่างสถานการณ์</span><h3>ใช้ข้อมูลลูกค้าฝึก AI ประเมินสินเชื่อ</h3><p>บริษัทนำข้อมูลลูกค้าไปฝึก AI เพื่อประเมินความเสี่ยงในการขอสินเชื่อ ต้องพิจารณาฐานกฎหมายในการใช้ข้อมูล วัตถุประสงค์ ความจำเป็นในการประมวลผล ความถูกต้องของข้อมูล และสิทธิของเจ้าของข้อมูล</p></article>
+      <article class="callout accent analysis reveal"><span class="tag">การวิเคราะห์</span><h3>ข้อสังเกตทางกฎหมาย</h3><p>PDPA กำกับการประมวลผลข้อมูลส่วนบุคคล แต่ไม่ได้กำหนดกรอบกำกับคุณภาพและอคติของ AI อย่างครอบคลุมโดยเฉพาะ และไม่มีบทบัญญัติที่เทียบเท่า <b>GDPR มาตรา 22</b> อย่างชัดแจ้งในเรื่องการตัดสินใจอัตโนมัติที่ส่งผลกระทบอย่างมีนัยสำคัญต่อบุคคล</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 6-7. COMPUTER ACT / COPYRIGHT -->
+<section class="slide" id="cyber" data-title="พ.ร.บ.คอมพิวเตอร์ฯ และลิขสิทธิ์">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2>พ.ร.บ.คอมพิวเตอร์ฯ และกฎหมายลิขสิทธิ์</h2></header>
+    <div class="tabs reveal" role="tablist" aria-label="เลือกหัวข้อ">
+      <button role="tab" aria-selected="true" aria-controls="tab-cyber" id="t1" class="tab on">พ.ร.บ.คอมพิวเตอร์ฯ กับการสร้างข้อมูลปลอมด้วย AI</button>
+      <button role="tab" aria-selected="false" aria-controls="tab-copy" id="t2" class="tab">กฎหมายลิขสิทธิ์กับการนำผลงานไปใช้ใน AI</button>
+    </div>
+
+    <div class="panel on" id="tab-cyber" role="tabpanel" aria-labelledby="t1">
+      <p><b>กฎหมายที่เกี่ยวข้อง:</b> พ.ร.บ.ว่าด้วยการกระทำความผิดเกี่ยวกับคอมพิวเตอร์ พ.ศ. 2550 และฉบับแก้ไขเพิ่มเติม พ.ศ. 2560</p>
+      <article class="callout accent"><h3>ประเด็นสำคัญ: มาตรา 14(1)</h3><p>บทบัญญัตินี้เกี่ยวข้องกับการนำเข้าข้อมูลคอมพิวเตอร์ที่บิดเบือน ปลอม หรือเป็นเท็จ โดยมีองค์ประกอบเรื่องการกระทำโดยทุจริตหรือหลอกลวง และลักษณะที่น่าจะเกิดความเสียหายแก่ประชาชน ทั้งยังมีข้อจำกัดตามที่กฎหมายกำหนดเกี่ยวกับความผิดฐานหมิ่นประมาท</p></article>
+      <div class="grid g2">
+        <article class="card"><h3>ตัวอย่างการใช้ AI ในทางที่ก่อให้เกิดความเสียหาย</h3><ul><li>สร้างเสียงหรือวิดีโอปลอมเพื่อหลอกลวง</li><li>เผยแพร่ข้อมูลปลอมเพื่อให้ประชาชนเข้าใจผิด</li><li>ใช้ AI สร้างหลักฐานปลอมเพื่อบิดเบือนข้อเท็จจริง</li></ul></article>
+        <article class="card"><h3>ประเด็นที่ต้องวิเคราะห์</h3>
+          <ul class="check">
+            <li><label><input type="checkbox"> มีการนำเข้าข้อมูลตามที่กฎหมายกำหนดหรือไม่</label></li>
+            <li><label><input type="checkbox"> ข้อมูลมีลักษณะตามองค์ประกอบของบทบัญญัติหรือไม่</label></li>
+            <li><label><input type="checkbox"> มีเจตนาและแนวโน้มความเสียหายตามที่กฎหมายกำหนดหรือไม่</label></li>
+            <li><label><input type="checkbox"> มีความผิดตามกฎหมายอื่นร่วมด้วยหรือไม่</label></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+
+    <div class="panel" id="tab-copy" role="tabpanel" aria-labelledby="t2">
+      <p><b>กฎหมายที่เกี่ยวข้อง:</b> พ.ร.บ.ลิขสิทธิ์ พ.ศ. 2537 และที่แก้ไขเพิ่มเติม</p>
+      <div class="grid g2">
+        <article class="card"><span class="tag">ประเด็นที่ 1</span><h3>การนำผลงานที่มีลิขสิทธิ์ไปใช้กับ AI</h3><p>การนำเพลง ภาพ หรือผลงานอื่นไปทำซ้ำ ดัดแปลง หรือเผยแพร่ อาจเกี่ยวข้องกับสิทธิของเจ้าของลิขสิทธิ์ ต้องพิจารณาการกระทำที่เกิดขึ้นและข้อยกเว้นตามกฎหมาย</p></article>
+        <article class="card"><span class="tag">ประเด็นที่ 2</span><h3>ลิขสิทธิ์ของผลงานที่สร้างด้วย AI</h3><p>ต้องพิจารณาลักษณะการสร้างสรรค์และบทบาทของมนุษย์ร่วมกับหลักกฎหมายที่เกี่ยวข้อง ไม่ควรสรุปว่าผลงานที่ AI สร้างทุกชิ้นมีลิขสิทธิ์ หรือไม่มีลิขสิทธิ์ทั้งหมด</p></article>
+      </div>
+      <article class="callout"><h3>ข้อมูลจากกรมทรัพย์สินทางปัญญา</h3><p>วันที่ 13 สิงหาคม 2569 กรมทรัพย์สินทางปัญญาชี้แจงว่า การใช้ผลงานเพลงที่ยังมีลิขสิทธิ์สร้างผลงานใหม่ด้วย AI โดยไม่ได้รับอนุญาต และไม่เข้าข้อยกเว้นตามกฎหมาย อาจเข้าข่ายละเมิดลิขสิทธิ์</p></article>
+      <article class="callout accent"><h3>ข้อสรุป</h3><p>ต้องพิจารณาสิทธิของเจ้าของผลงาน ลักษณะการใช้งาน และข้อเท็จจริงเป็นรายกรณี</p><p><a href="https://webnew.ipthailand.go.th/news/mzk0mjq-2026-08-13-000000/" target="_blank" rel="noopener">อ้างอิงจากข่าวกรมทรัพย์สินทางปัญญา ↗</a></p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 8. VOICE CASE -->
+<section class="slide alt" id="voice" data-title="AI สร้างเสียงปลอมเพื่อหลอกโอนเงิน">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2>AI สร้างเสียงปลอมเพื่อหลอกโอนเงิน</h2></header>
+    <p class="lead reveal">กรณีศึกษาสมมติ — กดแต่ละขั้นเพื่อดูการวิเคราะห์</p>
+    <ol class="seq reveal" aria-label="ลำดับเหตุการณ์ตั้งแต่สร้างเสียงปลอมจนเกิดความเสียหาย">
+      <li><b>1</b><span>สร้างเสียงปลอม</span><small>ใช้ AI เลียนเสียงผู้บริหาร</small></li>
+      <li><b>2</b><span>ส่งให้พนักงานบัญชี</span><small>ในรูปแบบคำสั่งจากผู้บริหาร</small></li>
+      <li><b>3</b><span>เข้าใจผิด</span><small>เชื่อว่าเป็นคำสั่งจริง</small></li>
+      <li><b>4</b><span>โอนเงิน</span><small>ไปยังบัญชีของผู้ก่อเหตุ</small></li>
+      <li class="loss"><b>5</b><span>เกิดความเสียหาย</span><small>บริษัทสูญเสียเงิน</small></li>
+    </ol>
+    <div class="stepper reveal" id="stepper">
+      <div class="steps" role="tablist">
+        <button class="st on" role="tab" aria-selected="true" data-i="0"><b>1</b>สถานการณ์สมมติ</button>
+        <button class="st" role="tab" aria-selected="false" data-i="1"><b>2</b>การวิเคราะห์กฎหมาย</button>
+        <button class="st" role="tab" aria-selected="false" data-i="2"><b>3</b>หลักฐานที่ควรตรวจสอบ</button>
+        <button class="st" role="tab" aria-selected="false" data-i="3"><b>4</b>ข้อสรุป</button>
+      </div>
+      <div class="st-body">
+        <div class="stp on">
+          <p>บุคคลหนึ่งใช้ AI สร้างเสียงเลียนแบบผู้บริหารบริษัท แล้วส่งเสียงให้พนักงานบัญชีเข้าใจว่าเป็นคำสั่งจริง ก่อนหลอกให้โอนเงินไปยังบัญชีของผู้ก่อเหตุ</p>
+        </div>
+        <div class="stp">
+          <ul class="laws">
+            <li><span class="pill">ประมวลกฎหมายอาญา</span>พิจารณาความผิดฐานฉ้อโกงตามมาตรา 341 หากองค์ประกอบความผิดครบถ้วน</li>
+            <li><span class="pill">พ.ร.บ.คอมพิวเตอร์ฯ</span>ตรวจสอบว่าการนำเข้าข้อมูลเข้าองค์ประกอบมาตรา 14(1) หรือบทบัญญัติอื่นหรือไม่</li>
+            <li><span class="pill">ประมวลกฎหมายแพ่งและพาณิชย์</span>พิจารณาความรับผิดจากการกระทำละเมิด หากเข้าเงื่อนไขตามมาตรา 420</li>
+            <li><span class="pill">PDPA</span>พิจารณาเพิ่มเติมหากมีการประมวลผลข้อมูลส่วนบุคคลที่เข้าเงื่อนไขกฎหมาย</li>
+          </ul>
+        </div>
+        <div class="stp">
+          <ul class="evid">
+            <li>ไฟล์เสียงและข้อความต้นฉบับ</li>
+            <li>ข้อมูลบัญชีและธุรกรรมทางการเงิน</li>
+            <li>บันทึกระบบและข้อมูลทางเทคนิคที่เกี่ยวข้อง</li>
+            <li>พยานบุคคลและข้อเท็จจริงที่เชื่อมโยงผู้กระทำกับความเสียหาย</li>
+          </ul>
+        </div>
+        <div class="stp">
+          <p class="big-quote">การใช้ AI เป็นเครื่องมือในการกระทำผิดไม่ได้ทำให้ข้อเท็จจริงหรือองค์ประกอบความผิดตามกฎหมายหมดความสำคัญ</p>
+        </div>
+      </div>
+      <div class="st-nav">
+        <button class="btn btn-ghost" type="button" id="stPrev">← ก่อนหน้า</button>
+        <button class="btn btn-gold" type="button" id="stNext">ถัดไป →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. PARTIES -->
+<section class="slide" id="parties" data-title="วิเคราะห์โครงงานกฎหมาย AI">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2>วิเคราะห์โครงงานกฎหมาย AI</h2></header>
+    <p class="lead reveal">ผู้เกี่ยวข้องกับ AI และประเด็นความรับผิดตามกฎหมาย — เลือกผู้เกี่ยวข้องเพื่อดูประเด็นที่ต้องพิจารณา</p>
+    <div class="parties reveal">
+      <div class="hub" role="tablist" aria-label="ผู้เกี่ยวข้อง">
+        <div class="core">AI</div>
+        <button class="node n1 on" role="tab" aria-selected="true" data-p="0">ผู้พัฒนา AI</button>
+        <button class="node n2" role="tab" aria-selected="false" data-p="1">ผู้ให้บริการ AI</button>
+        <button class="node n3" role="tab" aria-selected="false" data-p="2">องค์กรผู้ใช้งาน</button>
+        <button class="node n4" role="tab" aria-selected="false" data-p="3">ผู้ใช้งานรายบุคคล</button>
+      </div>
+      <div class="pinfo" aria-live="polite">
+        <div class="pi on"><h3>ผู้พัฒนา AI</h3><p>การออกแบบระบบ ความเสี่ยงที่คาดหมายได้ และหน้าที่ตามกฎหมายหรือสัญญา</p></div>
+        <div class="pi"><h3>ผู้ให้บริการ AI</h3><p>หน้าที่ในการให้บริการ การจัดการความเสี่ยง และการปฏิบัติตามกฎหมายที่เกี่ยวข้อง</p></div>
+        <div class="pi"><h3>องค์กรผู้ใช้งาน</h3><p>วิธีนำ AI ไปใช้ การตรวจสอบผลลัพธ์ และการกำกับดูแลการทำงาน</p></div>
+        <div class="pi"><h3>ผู้ใช้งานรายบุคคล</h3><p>การนำผลลัพธ์ไปใช้ การเผยแพร่ข้อมูล และการกระทำที่กระทบสิทธิผู้อื่น</p></div>
+      </div>
+    </div>
+    <h3 class="sub reveal">หลักกฎหมายที่อาจเกี่ยวข้อง</h3>
+    <div class="grid g3">
+      <article class="card reveal"><h4>ความรับผิดทางแพ่ง</h4><p>จากการกระทำละเมิดตามประมวลกฎหมายแพ่งและพาณิชย์ มาตรา 420 หากเข้าองค์ประกอบ</p></article>
+      <article class="card reveal"><h4>PDPA หรือ พ.ร.บ.คอมพิวเตอร์ฯ</h4><p>ความรับผิดตามกฎหมายเหล่านี้ หากการกระทำเข้าเงื่อนไขของกฎหมาย</p></article>
+      <article class="card reveal"><h4>ความรับผิดตามสัญญา</h4><p>หากมีความสัมพันธ์ทางสัญญาและเข้าเงื่อนไขที่เกี่ยวข้อง</p></article>
+    </div>
+    <article class="callout accent reveal"><h3>ประเด็นวิเคราะห์</h3><p>ต้องพิจารณาว่าใครกระทำอะไร มีหน้าที่ตามกฎหมายอย่างไร และการกระทำนั้นเชื่อมโยงกับความเสียหายหรือไม่</p></article>
+  </div>
+</section>
+
+<!-- 10. DRAFT -->
+<section class="slide alt" id="draft" data-title="ร่างกฎหมาย AI ของไทยและแนวทางที่เสนอ">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2>ร่างกฎหมาย AI ของไทยและแนวทางที่เสนอ</h2></header>
+    <h3 class="sub reveal">สถานะของร่างกฎหมาย</h3>
+    <ol class="timeline reveal">
+      <li><time>2 กรกฎาคม 2569</time><p>ETDA นำเสนอทิศทางร่าง AI Regulation v.4 ในงาน AI Governance Week 2026</p></li>
+      <li><time>9 กรกฎาคม – 14 สิงหาคม 2569</time><p>เปิดรับฟังความคิดเห็นต่อร่าง พ.ร.บ. ว่าด้วยปัญญาประดิษฐ์ฉบับเต็ม</p></li>
+      <li class="now"><time>ตุลาคม 2569</time><p>ร่างกฎหมายยังไม่มีผลใช้บังคับ</p></li>
+    </ol>
+    <div class="grid g2">
+      <article class="card reveal"><h3>แนวทางสำคัญจากเอกสารร่างที่กลุ่มศึกษา</h3>
+        <ul><li>การกำกับดูแลตามระดับความเสี่ยงของ AI</li><li>การกำหนดหน้าที่ของผู้พัฒนา ผู้ให้บริการ และผู้ใช้งาน AI ในบางกรณี</li><li>มาตรการด้านความโปร่งใสสำหรับเนื้อหาที่สร้างหรือปรับเปลี่ยนด้วย AI</li><li>กลไกกำกับดูแล การตรวจสอบ และการจัดการความเสี่ยง</li><li>แนวทางสนับสนุนการทดลอง AI ผ่าน Regulatory Sandbox</li></ul>
+      </article>
+      <article class="card gold-edge reveal"><h3>ความเห็นของกลุ่ม</h3>
+        <ol class="num-list"><li>พัฒนากรอบการประเมินความเสี่ยงให้ชัดเจนตามลักษณะการใช้งาน</li><li>กำหนดหน้าที่และความรับผิดให้เหมาะสมกับบทบาทของผู้เกี่ยวข้อง</li><li>พัฒนากลไกร้องเรียนและเยียวยาผู้เสียหาย</li><li>ส่งเสริมการตรวจสอบโดยมนุษย์ในการตัดสินใจที่มีผลกระทบสำคัญต่อสิทธิของบุคคล</li></ol>
+      </article>
+    </div>
+    <p class="note reveal"><b>หมายเหตุ:</b> รายละเอียดจากร่างกฎหมายเป็นข้อเสนอที่อยู่ระหว่างกระบวนการพัฒนา ไม่ใช่ข้อบังคับที่มีผลใช้บังคับแล้วทั้งหมด</p>
+  </div>
+</section>
+
+<!-- 11. EU -->
+<section class="slide" id="eu" data-title="EU AI Act">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2>EU AI Act: Regulation (EU) 2024/1689</h2></header>
+    <p class="lead reveal">สหภาพยุโรปมีกฎหมายเฉพาะสำหรับกำกับดูแล AI โดยใช้กรอบตามระดับความเสี่ยง พร้อมกำหนดหน้าที่ของผู้เกี่ยวข้องในระบบ AI บางประเภท</p>
+    <div class="cmp reveal" role="table" aria-label="เปรียบเทียบประเทศไทยกับสหภาพยุโรป">
+      <div class="row head" role="row"><div role="columnheader">ประเด็น</div><div role="columnheader">ประเทศไทย</div><div role="columnheader">สหภาพยุโรป</div></div>
+      <div class="row" role="row"><div role="cell" class="k">กรอบกำกับ AI โดยเฉพาะ</div><div role="cell" data-l="ไทย">มีการพัฒนาร่างกฎหมาย AI และแนวทางกำกับดูแล</div><div role="cell" data-l="EU">มี EU AI Act เป็นกรอบกฎหมายเฉพาะ</div></div>
+      <div class="row" role="row"><div role="cell" class="k">การแบ่งระดับความเสี่ยง</div><div role="cell" data-l="ไทย">มีแนวคิดตามระดับความเสี่ยงในร่างกฎหมาย</div><div role="cell" data-l="EU">กำหนดประเภทและระดับความเสี่ยงไว้ในกฎหมาย</div></div>
+      <div class="row" role="row"><div role="cell" class="k">หน้าที่ผู้เกี่ยวข้อง</div><div role="cell" data-l="ไทย">พิจารณาตามกฎหมายที่มีผลใช้บังคับและรายละเอียดในร่าง</div><div role="cell" data-l="EU">มีกฎเฉพาะตามประเภทระบบ AI และบทบาทผู้เกี่ยวข้อง</div></div>
+      <div class="row" role="row"><div role="cell" class="k">การบังคับใช้</div><div role="cell" data-l="ไทย">อาศัยกฎหมายเดิมและกลไกกำกับดูแลที่เกี่ยวข้อง</div><div role="cell" data-l="EU">มีโครงสร้างการกำกับดูแลและบทลงโทษในกรอบ EU AI Act</div></div>
+    </div>
+    <h3 class="sub reveal">กำหนดเวลาสำคัญของ EU AI Act · <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener">แหล่งที่มา ↗</a></h3>
+    <ol class="timeline h reveal">
+      <li><time>1 ส.ค. 2567</time><p>EU AI Act มีผลใช้บังคับในระดับกฎหมาย</p></li>
+      <li><time>2 ก.พ. 2568</time><p>ข้อกำหนดทั่วไปและข้อห้ามบางประเภทเริ่มใช้</p></li>
+      <li><time>2 ส.ค. 2569</time><p>ข้อกำหนดส่วนใหญ่เริ่มใช้ตามกรอบที่แก้ไขแล้ว</p></li>
+      <li><time>2 ธ.ค. 2570</time><p>กำหนดเริ่มใช้ข้อกำหนดหลักสำหรับ AI ความเสี่ยงสูงบางกลุ่มตาม Annex III</p></li>
+      <li><time>2 ส.ค. 2571</time><p>กำหนดเริ่มใช้ข้อกำหนดหลักสำหรับ AI ความเสี่ยงสูงที่เกี่ยวข้องกับผลิตภัณฑ์ตาม Annex I</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 12. CONCLUSION -->
+<section class="slide alt" id="conclusion" data-title="สรุปผลการวิเคราะห์และข้อเสนอ">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2>สรุปผลการวิเคราะห์และข้อเสนอของกลุ่ม</h2></header>
+    <p class="question reveal">ประเทศไทยพร้อมรับมือกับ AI แล้วหรือยัง?</p>
+    <article class="callout accent verdict reveal"><h3>ข้อสรุปของกลุ่ม</h3><p>ประเทศไทยมีเครื่องมือทางกฎหมายที่ใช้กับความเสี่ยงจาก AI ได้ <b>บางส่วน</b> แต่ยังไม่ครอบคลุมทุกประเภท และกรอบกำกับดูแลใหม่ยังอยู่ระหว่างพัฒนา</p></article>
+    <h3 class="sub reveal">ข้อเสนอของกลุ่ม 4 ข้อ</h3>
+    <div class="grid g2 recs">
+      <article class="card rec reveal"><span class="bignum">1</span><p>พัฒนาการกำกับดูแล AI ตามระดับความเสี่ยง</p></article>
+      <article class="card rec reveal"><span class="bignum">2</span><p>ทำให้หน้าที่และความรับผิดของผู้เกี่ยวข้องชัดเจน</p></article>
+      <article class="card rec reveal"><span class="bignum">3</span><p>เสริมช่องทางร้องเรียนและเยียวยาผู้เสียหาย</p></article>
+      <article class="card rec reveal"><span class="bignum">4</span><p>ส่งเสริมการตรวจสอบโดยมนุษย์และการประเมินความเสี่ยงก่อนใช้งาน AI ในเรื่องสำคัญ</p></article>
+    </div>
+    <blockquote class="final reveal"><span>คำตอบสุดท้าย</span>ประเทศไทยมีความพร้อมบางส่วน แต่ยังต้องพัฒนากลไกด้านกฎหมายและการกำกับดูแลอย่างต่อเนื่อง เพื่อให้สามารถรับมือกับความเสี่ยงจาก AI ได้อย่างเหมาะสม</blockquote>
+  </div>
+</section>
+
+<!-- REFS -->
+<section class="slide refs" id="refs" data-title="แหล่งอ้างอิง">
+  <div class="wrap">
+    <header class="sec-head reveal"><h2>แหล่งอ้างอิง</h2></header>
+    <h3 class="sub reveal">แหล่งกฎหมาย</h3>
+    <ul class="reflist reveal">
+      <li><b>สำนักงานคณะกรรมการกฤษฎีกา</b> — ระบบฐานข้อมูลกฎหมายไทย (PDPA, พ.ร.บ.คอมพิวเตอร์ฯ, พ.ร.บ.ลิขสิทธิ์, ป.อาญา, ป.พ.พ.)<a href="https://www.krisdika.go.th" target="_blank" rel="noopener">krisdika.go.th ↗</a></li>
+      <li><b>EUR-Lex</b> — Regulation (EU) 2024/1689 (EU AI Act)<a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener">eur-lex.europa.eu ↗</a></li>
+    </ul>
+    <h3 class="sub reveal">หน่วยงานรัฐและองค์กรกำกับดูแล</h3>
+    <ul class="reflist reveal">
+      <li><b>กรมทรัพย์สินทางปัญญา</b> — ข่าววันที่ 13 สิงหาคม 2569<a href="https://webnew.ipthailand.go.th/news/mzk0mjq-2026-08-13-000000/" target="_blank" rel="noopener">ipthailand.go.th ↗</a></li>
+      <li><b>ETDA</b> — ร่างกฎหมาย AI และแนวทางธรรมาภิบาล AI<a href="https://www.etda.or.th" target="_blank" rel="noopener">etda.or.th ↗</a></li>
+      <li><b>สำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (PDPC)</b><a href="https://www.pdpc.or.th" target="_blank" rel="noopener">pdpc.or.th ↗</a></li>
+      <li><b>European Commission</b> — Regulatory framework for AI<a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener">digital-strategy.ec.europa.eu ↗</a></li>
+    </ul>
+    <h3 class="sub reveal">งานวิจัยและผลสำรวจ</h3>
+    <ul class="reflist reveal">
+      <li><b>NECTEC</b> — ผลสำรวจความพร้อม AI ระดับองค์กร (เผยแพร่ 3 กันยายน 2569)<a href="https://www.nectec.or.th/news/news-pr-news/ai-readiness-2026.html" target="_blank" rel="noopener">nectec.or.th ↗</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap">ประเทศไทยพร้อมรับมือกับ AI หรือยัง? · เว็บไซต์นำเสนอจากสไลด์ต้นฉบับ</div></footer>
+
+<!-- Presentation controls -->
+<div class="pbar" id="pbar" hidden>
+  <button class="btn btn-ghost" type="button" id="pPrev" aria-label="ก่อนหน้า">←</button>
+  <span id="pCount">1 / 12</span>
+  <span class="ptitle" id="pTitle"></span>
+  <button class="btn btn-ghost" type="button" id="pNext" aria-label="ถัดไป">→</button>
+  <button class="btn btn-ghost" type="button" id="pFull" aria-label="เต็มจอ">⛶</button>
+  <button class="btn btn-gold" type="button" id="pExit">ออก (Esc)</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
